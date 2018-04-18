@@ -34,44 +34,6 @@
 		text-overflow on it to see if the example will work as desired.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sodales justo vitae vehicula. Aliquam erat volutpat. Aliquam sed odio vel erat faucibus lobortis. Nullam venenatis dictum quam, vitae volutpat purus bibendum a. Integer quam augue, consequat non tempus at, congue at sapien. Integer lectus leo, feugiat at ipsum vitae, convallis ultricies risus. Phasellus a nisl vel neque interdum euismod. Etiam malesuada lacinia risus, in ornare velit semper eget. Mauris venenatis ultricies dolor nec rutrum. Praesent convallis aliquam mauris at viverra. Fusce tincidunt congue rutrum. Nam semper in mauris at viverra. Quisque congue ultricies maximus. Praesent vitae justo nunc. Integer vel lorem sollicitudin, accumsan arcu id, gravida lacus.</p>
 	</section>
-	
-	<script language="JavaScript1.2">
-
-	var howOften = 5; //number often in seconds to rotate
-	var current = 0; //start the counter at 0
-	var ns6 = document.getElementById&&!document.all; //detect netscape 6
-
-// place your images, text, etc in the array elements here
-	var items = new Array();
-		items[0]="<img alt='image0 (9K)' src=' /Images/image0.jpg' height='300' width='300' border='0' />"; //a linked image
-		items[1]="<img alt='image1 (9K)' src='/Images/image1.jpg' height='300' width='300' border='0' />"; //a linked image
-		items[2]="<img alt='image2 (9K)' src='/Images/image2.jpg' height='300' width='300' border='0' />"; //a linked image
-		items[3]="<img alt='image3 (9K)' src='/Images/image3.jpg' height='300' width='300' border='0' />"; //a linked image
-		items[4]="<img alt='image4 (9K)' src='/Images/image4.jpg' height='300' width='300' border='0' />"; //a linked image
-		items[5]="<img alt='image5 (18K)' src='/Images/image5.jpg' height='300' width='300' border='0' />"; //a linked image
-	function rotater() {
-		document.getElementById("placeholder").innerHTML = items[current];
-		current = (current==items.length-1) ? 0 : current + 1;
-		setTimeout("rotater()",howOften*1000);
-	}
-
-	function rotater() {
-		if(document.layers) {
-			document.placeholderlayer.document.write(items[current]);
-			document.placeholderlayer.document.close();
-		}
-		if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
-			if(document.all)
-				placeholderdiv.innerHTML=items[current];
-			
-				current = (current==items.length-1) ? 0 : current + 1; //increment or reset
-				setTimeout("rotater()",howOften*1000);
-	}
-	window.onload=rotater;
-	//-->
-</script>
-
-<layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
 
 </body>
 </html>
