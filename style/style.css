@@ -539,7 +539,8 @@ h3 children of resumebox. Resume element 4;
 Adjust map api
 */
 #map {
-        width: 100%;
+		float: right;
+        width: 50%;
         height: 400px;
         background-color: grey;
       }
