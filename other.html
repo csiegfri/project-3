@@ -52,6 +52,25 @@
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sodales justo vitae vehicula. Aliquam erat volutpat. Aliquam sed odio vel erat faucibus lobortis. Nullam venenatis dictum quam, vitae volutpat purus bibendum a. Integer quam augue, consequat non tempus at, congue at sapien. Integer lectus leo, feugiat at ipsum vitae, convallis ultricies risus. Phasellus a nisl vel neque interdum euismod. Etiam malesuada lacinia risus, in ornare velit semper eget. Mauris venenatis ultricies dolor nec rutrum. Praesent convallis aliquam mauris at viverra. Fusce tincidunt congue rutrum. Nam semper in mauris at viverra. Quisque congue ultricies maximus. Praesent vitae justo nunc. Integer vel lorem sollicitudin, accumsan arcu id, gravida lacus
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo sodales justo vitae vehicula. Aliquam erat volutpat. Aliquam sed odio vel erat faucibus lobortis. Nullam venenatis dictum quam, vitae volutpat purus bibendum a. Integer quam augue, consequat non tempus at, congue at sapien. Integer lectus leo, feugiat at ipsum vitae, convallis ultricies risus. Phasellus a nisl vel neque interdum euismod. Etiam malesuada lacinia risus, in ornare velit semper eget. Mauris venenatis ultricies dolor nec rutrum. Praesent convallis aliquam mauris at viverra. Fusce tincidunt congue rutrum. Nam semper in mauris at viverra. Quisque congue ultricies maximus. Praesent vitae justo nunc. Integer vel lorem sollicitudin, accumsan arcu id, gravida lacus
 	</p>
+	
+	<h3>Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdwHzEn2OXJcSZeq7gROHDXPO1Jll01go&callback=initMap">
+    </script>
 
 </body>
 </html>
