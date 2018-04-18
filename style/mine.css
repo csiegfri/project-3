@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+
+/*
+Finished with using the normalize feature
+*/
+
+/*
+Added body background that repeats evenly, font family from googleapis. Universal style element: 1
+*/
+body{
+	background-image: url("media/pattern.jpg");
+	background-repeat: repeat;
+	font-family:"Archivo Narrow", sans serif;
+}
+
+/*
+To be horizontal nav bar using a ul. Universal style element: 2
+*/
+.navigation{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #999292;
+}
+
+/*
+child li of navigation will float left, instead of all list elements. Universal style element: 3
+*/
+.navigation li{
+	float: left;
+	font-size: 1.6em;
+}
+
+/*
+a in the nav bar, removing underline and adjusting looks. Universal style element: 4
+*/
+.navigation li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	
+}
+
+/*
+Change to black while hovering
+*/
+.navigation li a:hover{
+	background-color: #111;
+}
+
+/*
+active nav bar option to make it obvious. Universal style element: 5
+*/
+.active{
+	background-color: white;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+/*
+added indexbox attributes. index element: 1;
+*/
+.indexbox{
+	margin: 3%;
+	padding: .5em;
+	width: 39%;
+	float: left;
+	border-style: dotted;
+	border-width: .5em;
+	border-color: red;
+	text-align: center;
+}
+
+/*
+ID made explicitly to show off text overflow set to hidden. index element: 2
+*/
+#squished{
+	overflow: hidden;
+	height: 10.5em;
+}
+
+/*
+modify order list bullet type. Index element: 3
+*/
+ol{
+	list-style-type: upper-latin;
+}
+
+/*
+Adjusting h1 attributes. Universal style element: 7
+*/
+h1{
+	position: relative;
+	left: 1em;
+	font-size: 2.5em;
+	color: red;
+	text-decoration: underline;
+}
+
+/*
+Border stuff and padding for table and child elements. Other element: 1;
+*/
+table, td, th{
+	border-style: double;
+	border-width: .3em;
+	border-collapse: collapse;
+	border-color: black;
+	padding: .2em;
+}
+
+/*
+putting the table as fixed, adjusting with and position, changing background to make it stand out more. Other element: 2;
+*/
+table{
+	width: 40%;
+	height: 30%;
+	right: 500px;
+	position: fixed;
+	background-color: white;
+}
+
+/*
+Adjusting attributes of vid section. Other element: 3;
+*/
+#vid{
+	text-align: center;
+	padding: 5%;
+	margin: 0em;
+	width: 90%;
+}
+
+/*
+dummy text to add enough screen space so that the screen scrolls. Other element: 4;
+*/
+#dummy{
+	text-align: center;
+	color: orange;
+	font-style: italic;
+	background-color: blue;
+}
+
+
+/*
+contact info on resume. Resume element: 1;
+*/
+#contact{
+	text-align: center;
+	color: orange;
+}
+
+/*
+Adjusting the h3 within the contact, giving it a bit more prominence. Resume element 2;
+*/
+#contract h3{
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+/*
+encompassing boxes around resume info. Resume element 3;
+*/
+.resumebox{
+	float: left;
+	border-style: solid;
+	margin: 1em;
+	padding: .2em;
+	background: rgba(76, 175, 80, 0.3);
+}
+
+
+/*
+h3 children of resumebox. Resume element 4;
+*/
+.resumebox h3{
+	font-weight: bolder;
+}
