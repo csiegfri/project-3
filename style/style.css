@@ -350,7 +350,7 @@ Finished with using the normalize feature
 Added body background that repeats evenly, font family from googleapis. Universal style element: 1
 */
 body{
-	background-image: url("media/pattern.jpg");
+	background-color: tan;
 	background-repeat: repeat;
 	font-family:"Archivo Narrow", sans serif;
 }
