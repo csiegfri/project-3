@@ -543,4 +543,12 @@ Adjust map api
         width: 50%;
         height: 400px;
         background-color: grey;
-      }
+}
+
+/*
+Added for slider to work
+*/
+.slider {
+	display: block;
+	margin: 0 auto;
+}
