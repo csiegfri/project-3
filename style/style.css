@@ -395,6 +395,18 @@ a in the nav bar, removing underline and adjusting looks. Universal style elemen
 	
 }
 
+@media screen and (max-width: 600px) {
+    .navigation{
+        float: none;
+        width: 100%;
+    }
+	
+	.navigation li{
+		padding: 10px 10px;
+		width: 20%;
+	}
+}
+
 /*
 Change to black while hovering
 */
